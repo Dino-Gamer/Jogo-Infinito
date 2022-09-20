@@ -81,10 +81,10 @@ function draw() {
       if (keyDown("s") || keyDown("down")){
          foguete.y = foguete.y+3;
       }
-      if (keyDown("a") || keyDown("right")){
+      if (keyDown("a") || keyDown("left")){
          foguete.x = foguete.x-3;
       }
-      if (keyDown("d") || keyDown("left")){
+      if (keyDown("d") || keyDown("right")){
          foguete.x = foguete.x+3;
       }
 
@@ -118,6 +118,7 @@ function draw() {
       explosao.y = foguete.y;
 
       foguete.destroy();
+      meteoro.destroy();
      }
 
 
